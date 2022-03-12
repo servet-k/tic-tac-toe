@@ -1,26 +1,30 @@
 body{
     margin :0;
     display:flex;
+    flex-direction:column;
    justify-content:center;
    align-items:center;
    height:100vh;
+   color:greenyellow;
+   background-color: black;
 }
 .board {
     display:grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
-    width: 15%;
-    height: 40%;
-   
+    width: 20%;
+    height: 50%;
+    cursor: pointer;
 }
 .cell {
     display:flex;
     justify-content:center;
     align-items:center;
-    border: 1px solid black;
+    border: 1px solid purple;
     font-size: 30px;
-    background-color: rgb(245, 205, 245);
+    background-color: Black;
 }
+
 
 #a0,#a1,#a2{
     border-top:none;
@@ -36,4 +40,29 @@ body{
 
 #a2,#a5,#a8{
     border-right:none;
+}
+h1{
+    text-align:center;
+    margin-bottom: 3rem;
+}
+#gameover{
+    border: 1px solid purple;
+    width:300px;
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+button{
+background-color: red;
+color:white;
+font: 20px bold;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.hidden{
+    display:none;
+}
+.result {
+    display:block;
 }
