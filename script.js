@@ -57,6 +57,7 @@ function checkWin(){
             gameover.className="result";
             gameresult.innerText=`${currentPlayer} wins`;
             box.forEach(item=>item.removeEventListener("click",addSign,true));
+            return;
         }
     }
     if (!clickedArray.includes(null))
@@ -65,6 +66,7 @@ function checkWin(){
    gameover.className="result";
    gameresult.innerText="It's a draw";
    box.forEach(item=>item.removeEventListener("click",addSign,true));
+   return;
        }
 
 }
